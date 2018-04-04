@@ -1,7 +1,5 @@
 node default {
-  file{'/root/README':
-  ensure  => file,
-  content => 'This is a readme',
-  owner   => 'root',
-  }
-}  
+ }
+ node '26053.s.t4vps.eu' {
+   include role::master_server
+} 
